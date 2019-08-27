@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!--
+  Created By Shaymaa at 15/04/19 20:47.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="customermobile" frontName="customermobile">
+            <module name="MageArab_CustomerMobile" />
+        </route>
+    </router>
+</config>

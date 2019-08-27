@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+  Created By Shaymaa at 15/04/19 21:52.
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_edit">
+            <block class="MageArab\CustomerMobile\Block\Widget\CustomerMobile" name="customer_mobile" template="MageArab_CustomerMobile::widget/customer_mobile.phtml" cacheable="false" />
+        </referenceBlock>
+
+    </body>
+</page>

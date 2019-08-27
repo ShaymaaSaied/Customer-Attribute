@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+        <!--
+  Created By Shaymaa at 15/04/19 20:58.
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- add mobile to registration-->
+        <referenceContainer name="form.additional.info">
+            <block class="MageArab\CustomerMobile\Block\Widget\CustomerMobile" name="customer_mobile" template="MageArab_CustomerMobile::register/customer_mobile.phtml"  />
+        </referenceContainer>
+    </body>
+</page>

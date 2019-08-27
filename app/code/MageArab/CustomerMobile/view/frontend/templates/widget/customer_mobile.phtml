@@ -1,0 +1,35 @@
+<?php
+/**
+ * Created By Shaymaa at 15/04/19 21:57.
+ */
+
+/**
+ * Created By Shaymaa at 15/04/19 21:00.
+ */
+
+/** @var \MageArab\CustomerMobile\Block\Widget\CustomerMobile $block */
+?>
+<?php if ($block->isEnabled()): ?>
+    <div class="fieldset info">
+        <div class="field field-github-url <?= $block->isRequired() ? 'required' : '' ?>">
+            <label for="fax" class="label">
+        <span>
+            <?= $block->escapeHtml(__('Mobile Number')) ?>
+        </span>
+            </label>
+            <div class="control">
+                <?php
+                $_validationClass = $block->getAttributeValidationClass();
+                ?>
+                <input type="text"
+                       name="customer_mobile"
+                       value="<?= $block->escapeHtmlAttr($block->getCustomerMobile()) ?>"
+                       id="customer_mobile"
+                       title="<?= $block->escapeHtmlAttr(__('Mobile Number')) ?>"
+                       class="input-text <?= $_validationClass ?: '' ?>"
+
+                >
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
